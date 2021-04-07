@@ -1,0 +1,74 @@
+.future-info {
+    flex: 1;
+    .title {
+      cursor: pointer;
+      position: relative;
+      font-weight: 700;
+      opacity: 0.7;
+      margin-bottom: 0;
+    }
+
+    .active {
+      opacity: 1;
+      &:after {
+        background: white;
+        content: "";
+        width: 120%;
+        height: 2px;
+        position: absolute;
+        top: auto;
+        bottom: -2px;
+        left: 0;
+        right: auto;
+      }
+    }
+
+    .herozintal-line {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .scroll-results {
+      margin-bottom: 20px;
+      overflow-x: scroll;
+      display: flex;
+      flex-wrap: nowrap;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+      /* Browser scrollbar */
+      &::-webkit-scrollbar {
+        width: 20px;
+        height: 3px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: white;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: white;
+      }
+
+      /* Only FireFox */
+      scrollbar-width: thin !important ;
+      scrollbar-color: white transparent;
+    }
+    .weather-icn {
+      display: block;
+      width: 70px;
+      height: 70px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .hourly-weather-temp {
+      text-align: center;
+      font-size: 1.7rem;
+    }
+    .daily-weather-temp {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }

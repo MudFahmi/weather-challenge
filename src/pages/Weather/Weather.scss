@@ -1,0 +1,46 @@
+.weather-page-wrapper {
+    height: 100%;
+    background-image: url("../../assets/images/blue-sky.png");
+    padding: 0 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 80%;
+        top: 20%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .spinner-border {
+            width: 5em;
+            height: 5em;
+            border: 0.55em solid currentColor;
+            border-right-color: transparent;
+        }
+    }
+
+    .navbar {
+        flex: 0.3;
+
+        .flip-temp {
+            cursor: pointer;
+            padding: 5px 20px;
+        }
+        .celsius-selected {
+            border-right: 1px solid white;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .fahrenheit-selected {
+            border-left: 1px solid white;
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+}

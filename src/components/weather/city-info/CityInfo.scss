@@ -1,0 +1,29 @@
+.city-info {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    .today-weather-img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-left: -5px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .day-status {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: -5px;
+    }
+
+    .today-temperature {
+        font-size: 5rem;
+        font-weight: 900;
+        line-height: 1.3;
+    }
+    .max-min-temperature {
+        font-size: 2rem;
+    }
+}
