@@ -5,7 +5,7 @@ Just visit the link and you will get all the weather information for next 7 days
 - BigData Cloud api to get city name using latitude and longitude from endpoint [https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=[latitude]&longitude=[longitude]&localityLanguage=en]
 
 # Notes 
-- Had to change darksky endpoint to get over the CORS problems from the server using  [https://cors.bridged.cc/[darksky endpoint]].
+- Had to change darksky endpoint to get over the CORS problems from the server using  [https://cors.bridged.cc /[darksky endpoint]].
 - Used BigData Cloud Api becouse it is free and didn't require any payment details, the documentation for endpoint is [here](https://www.bigdatacloud.com/geocoding-apis/free-reverse-geocode-to-city-api)
 - Used Media query to make the page is reponsive for all screens
 - Test design and functionality on browsers(google chrome and firefox)
