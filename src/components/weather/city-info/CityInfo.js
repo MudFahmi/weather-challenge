@@ -8,7 +8,7 @@ function CityInfo(props) {
     return (
         <div className="d-flex city-info " >
             <div>
-                <h1 className="font-weight-bolder mb-0">{city}</h1>
+                <h2 className="city-name">{city}</h2>
                 <p className="day-date mb-0 font-weight-bold">
                     {weekdays[new Date().getDay()] + " " + new Date().getDate() + ", " + new Date().getFullYear()}
                 </p>

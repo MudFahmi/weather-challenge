@@ -2,6 +2,10 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    .city-name {
+        font-weight: 900;
+        margin-bottom: 0;
+    }
     .today-weather-img {
         display: block;
         width: 100px;
@@ -30,15 +34,15 @@
 
 @media only screen and (max-width: 500px) {
     .city-info {
-        h1 {
-            font-size: 1.5rem;
+        .city-name {
+            font-size: 1.3rem;
         }
         .today-weather-img {
             width: 70px;
             height: 70px;
         }
-        .day-date{
-            font-size: .7rem;
+        .day-date {
+            font-size: 0.7rem;
         }
         .day-status {
             font-size: 1rem;
@@ -46,12 +50,12 @@
 
         .today-temperature {
             font-size: 3rem;
-        } 
+        }
         .max-min-temperature {
             font-size: 1.2rem;
         }
-        .today-summary{
-            font-size: .8rem;
+        .today-summary {
+            font-size: 0.8rem;
         }
     }
 }
