@@ -27,3 +27,31 @@
         font-size: 2rem;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .city-info {
+        h1 {
+            font-size: 1.5rem;
+        }
+        .today-weather-img {
+            width: 70px;
+            height: 70px;
+        }
+        .day-date{
+            font-size: .7rem;
+        }
+        .day-status {
+            font-size: 1rem;
+        }
+
+        .today-temperature {
+            font-size: 3rem;
+        } 
+        .max-min-temperature {
+            font-size: 1.2rem;
+        }
+        .today-summary{
+            font-size: .8rem;
+        }
+    }
+}

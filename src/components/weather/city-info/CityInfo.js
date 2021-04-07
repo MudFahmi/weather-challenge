@@ -9,7 +9,7 @@ function CityInfo(props) {
         <div className="d-flex city-info " >
             <div>
                 <h1 className="font-weight-bolder mb-0">{city}</h1>
-                <p className="mb-0 font-weight-bold">
+                <p className="day-date mb-0 font-weight-bold">
                     {weekdays[new Date().getDay()] + " " + new Date().getDate() + ", " + new Date().getFullYear()}
                 </p>
 
@@ -31,7 +31,7 @@ function CityInfo(props) {
                     {data && (getTemperature(Math.max(...data?.hourly?.data.map(obj => obj.apparentTemperature))) + "° / ")}
                     {data && (getTemperature(Math.min(...data?.hourly?.data.map(obj => obj.apparentTemperature))) + "°")}
                 </p>
-                <p className="font-weight-bolder">
+                <p className="today-summary font-weight-bolder">
                     {data?.hourly?.summary}
 
                 </p>

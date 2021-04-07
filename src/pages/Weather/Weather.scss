@@ -44,3 +44,13 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .weather-page-wrapper {
+        .navbar {
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
