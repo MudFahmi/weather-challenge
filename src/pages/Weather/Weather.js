@@ -48,12 +48,7 @@ function Weather() {
     }
 
     function getCoords(position) {
-        //position.coords.longitude;
-        //position.coords.latitude;
         const coords = position.coords
-        console.log({ coords });
-
-
         axios(`https://cors.bridged.cc/https://api.darksky.net/forecast/${API_KEY}/${coords.latitude},${coords.longitude}`,
             {
                 headers: {
@@ -64,8 +59,6 @@ function Weather() {
                 setData(res.data)
             })
             .catch(err => {
-
-                //console.log(err.response.data);
                 setError(err?.response?.data)
             })
 
@@ -80,34 +73,28 @@ function Weather() {
                 setCity(data?.city || data?.locality)
             })
             .catch(err => setError(err))
-
-
     }
-
-    console.log(data);
     return (
         <div className="weather-page-wrapper">
-
-            {/* header */}
             <nav className="navbar bg-transparent px-0">
                 <div className="container-fluid px-0">
                     <h3 className="font-weight-bold ">
                         INSTAWEATHER
-            </h3>
+                    </h3>
                     <div className="d-flex font-weight-bold">
                         <div
                             className={"flip-temp " + (type === "C" ? "celsius-selected" : "")}
                             onClick={() => setType('C')}
                         >
                             C
-            </div>
+                        </div>
 
                         <div
                             className={"flip-temp " + (type === "F" ? "fahrenheit-selected" : "")}
                             onClick={() => setType('F')}
                         >
                             F
-            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
